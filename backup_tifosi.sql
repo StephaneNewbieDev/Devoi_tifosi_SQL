@@ -239,7 +239,7 @@ COMMIT;
 -- Création du compte utilisateur et attribution des privilèges
 --
 DROP USER IF EXISTS 'tifosi'@'localhost';
-CREATE USER 'tifosi'@'localhost' IDENTIFIED BY 'mot_de_passe_secret_a_choisir';
+CREATE USER 'tifosi'@'localhost' IDENTIFIED BY 'stephane';
 GRANT ALL PRIVILEGES ON `tifosi`.* TO 'tifosi'@'localhost';
 FLUSH PRIVILEGES;
 
@@ -363,4 +363,5 @@ INSERT INTO `achat` (`id_client`, `id_focaccia`, `jour`) VALUES
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
